@@ -1,11 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
+import HeroFilter from "./_common/hero-filter";
 
 const HeroSection = () => {
   return (
     <div
-      className="w-full h-[550px] mb-4"
+      className="w-full min-h-[550px] mb-4"
       style={{
         background: `linear-gradient(160.29deg, #00b53f .67%, #00831e 100.93%)`,
       }}
@@ -17,8 +18,9 @@ const HeroSection = () => {
                     <div className="w-full flex flex-col items-center">
                         <h2 className="text-[30px] md:text-[46px] font-extrabold leading-10 md:leading-[50px]">
                             <span>Find the car  you <br /> want {" "}</span>
-                            <span className="text-primary"> Your Way</span>
+                            <span className="text-green-600"> Your Way</span>
                         </h2>
+                        <HeroFilter />
                     </div>
                 </CardContent>
             </Card>
